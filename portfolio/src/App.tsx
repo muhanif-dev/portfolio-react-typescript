@@ -2,7 +2,7 @@
 function App() {
 
   return (
-    <h1>Portfoio hey</h1>
+    <h1 className="text-orange-500">Portfoio hey</h1>
   )
 }
 
