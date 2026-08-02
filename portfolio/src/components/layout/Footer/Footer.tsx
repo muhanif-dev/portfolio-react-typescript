@@ -1,5 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub, faLinkedinIn, faTwitter, faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
+import { NavLink } from "react-router-dom";
+
 
 const Footer = () => {
   return (
@@ -32,39 +34,75 @@ const Footer = () => {
         {/* Horizontal Divider */}
         <div className="w-full border-t border-gray-800/80 my-2"></div>
 
-        {/* Navigation Links */}
-        <ul className="flex flex-wrap items-center justify-center gap-8 text-sm font-medium text-gray-300">
-          <li>
-            <a href="#works" className="hover:text-[#FF6A3D] transition-colors duration-200">Works</a>
-          </li>
-          <li>
-            <a href="#services" className="hover:text-[#FF6A3D] transition-colors duration-200">Services</a>
-          </li>
-          <li>
-            <a href="#about" className="hover:text-[#FF6A3D] transition-colors duration-200">About</a>
-          </li>
-          <li>
-            <a href="#skills" className="hover:text-[#FF6A3D] transition-colors duration-200">Skills</a>
-          </li>
-          <li>
-            <a href="#contact" className="hover:text-[#FF6A3D] transition-colors duration-200">Contact us</a>
-          </li>
-        </ul>
+
+{/* Navigation Links */}
+<ul className="flex flex-wrap items-center justify-center gap-8 text-sm font-medium text-gray-300">
+  <li>
+    <NavLink 
+      to="/" 
+      className={({ isActive }) => 
+        `transition-colors duration-200 no-underline ${isActive ? 'text-[#FF6A3D]' : 'hover:text-[#FF6A3D]'}`
+      }
+    >
+      Home
+    </NavLink>
+  </li>
+  <li>
+    <NavLink 
+      to="/services" 
+      className={({ isActive }) => 
+        `transition-colors duration-200 no-underline ${isActive ? 'text-[#FF6A3D]' : 'hover:text-[#FF6A3D]'}`
+      }
+    >
+      Services
+    </NavLink>
+  </li>
+  <li>
+    <NavLink 
+      to="/about" 
+      className={({ isActive }) => 
+        `transition-colors duration-200 no-underline ${isActive ? 'text-[#FF6A3D]' : 'hover:text-[#FF6A3D]'}`
+      }
+    >
+      About
+    </NavLink>
+  </li>
+  <li>
+    <NavLink 
+      to="/projects" 
+      className={({ isActive }) => 
+        `transition-colors duration-200 no-underline ${isActive ? 'text-[#FF6A3D]' : 'hover:text-[#FF6A3D]'}`
+      }
+    >
+      Projects
+    </NavLink>
+  </li>
+  <li>
+    <NavLink 
+      to="/contact" 
+      className={({ isActive }) => 
+        `transition-colors duration-200 no-underline ${isActive ? 'text-[#FF6A3D]' : 'hover:text-[#FF6A3D]'}`
+      }
+    >
+      Contact us
+    </NavLink>
+  </li>
+</ul>
 
         {/* Social Media Icons */}
         <div className="flex items-center gap-4 pt-2">
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="w-11 h-11 bg-[#121826] border border-gray-800 rounded-xl flex items-center justify-center text-gray-300 hover:text-white hover:border-[#FF6A3D] hover:bg-[#FF6A3D]/10 transition-all duration-300 shadow-md">
+          <a href="https://github.com/muhanif-dev" target="_blank" rel="noopener noreferrer" className="w-11 h-11 bg-[#121826] border border-gray-800 rounded-xl flex items-center justify-center text-gray-300 hover:text-white hover:border-[#FF6A3D] hover:bg-[#FF6A3D]/10 transition-all duration-300 shadow-md">
             <FontAwesomeIcon icon={faGithub} />
           </a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="w-11 h-11 bg-[#121826] border border-gray-800 rounded-xl flex items-center justify-center text-gray-300 hover:text-white hover:border-[#FF6A3D] hover:bg-[#FF6A3D]/10 transition-all duration-300 shadow-md">
+          <a href="https://www.linkedin.com/in/muhammad-hanif-92a127358/" target="_blank" rel="noopener noreferrer" className="w-11 h-11 bg-[#121826] border border-gray-800 rounded-xl flex items-center justify-center text-gray-300 hover:text-white hover:border-[#FF6A3D] hover:bg-[#FF6A3D]/10 transition-all duration-300 shadow-md">
             <FontAwesomeIcon icon={faLinkedinIn} />
           </a>
-          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="w-11 h-11 bg-[#121826] border border-gray-800 rounded-xl flex items-center justify-center text-gray-300 hover:text-white hover:border-[#FF6A3D] hover:bg-[#FF6A3D]/10 transition-all duration-300 shadow-md">
+          {/* <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="w-11 h-11 bg-[#121826] border border-gray-800 rounded-xl flex items-center justify-center text-gray-300 hover:text-white hover:border-[#FF6A3D] hover:bg-[#FF6A3D]/10 transition-all duration-300 shadow-md">
             <FontAwesomeIcon icon={faTwitter} />
           </a>
           <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="w-11 h-11 bg-[#121826] border border-gray-800 rounded-xl flex items-center justify-center text-gray-300 hover:text-white hover:border-[#FF6A3D] hover:bg-[#FF6A3D]/10 transition-all duration-300 shadow-md">
             <FontAwesomeIcon icon={faInstagram} />
-          </a>
+          </a> */}
         </div>
 
         {/* Legal Links */}
