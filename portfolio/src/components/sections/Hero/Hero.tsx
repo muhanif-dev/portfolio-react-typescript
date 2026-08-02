@@ -4,7 +4,7 @@ import HeroState from "./HeroState";
 
 const Hero = () => {
   return (
-    <section className="bg-[#FFF8F4]">
+    <section className="bg-[#FFF8F4] rounded-xl">
       <div className="mx-auto max-w-7xl px-6 pt-12 lg:px-10">
 
         {/* Hero */}

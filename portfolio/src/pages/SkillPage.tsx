@@ -65,7 +65,7 @@ const SkillPage = () => {
   ];
 
   return (
-    <section className="bg-[#0b0f19] min-h-screen text-white py-20 px-6 flex items-center justify-center font-sans">
+    <section className="bg-[#0b0f19] min-h-screen text-white py-20 px-6 flex items-center justify-center font-sans rounded-xl">
       <div className="max-w-6xl mx-auto w-full">
         
         {/* Section Heading */}

@@ -5,21 +5,25 @@ const Projects = () => {
   const services = [
     {
       title: 'UI/UX Design',
-      image: 'https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?auto=format&fit=crop&q=80&w=600'
+      image: '/images/MemoryGame.png',
+      link: 'https://memory-match-game-fawn.vercel.app/'
     },
     {
       title: 'Web Design',
-      image: 'https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&q=80&w=600'
+      image: '/images/RingSizeCalculatore.png',
+      link: 'https://java-script-projects-ring-size-calc.vercel.app/'
+
     },
     {
       title: 'Web Development',
-      image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80&w=600'
+      image: '/images/nestivo-commerce.png',
+      link:"https://dev-nestivo.pantheonsite.io/"
     }
   ];
 
   return (
-    <section className="bg-[#0b0f19] min-h-screen text-white py-20 px-6 flex items-center justify-center font-sans">
-      <div className="max-w-7xl mx-auto w-full">
+    <section className="bg-[#0b0f19] min-h-screen text-white py-20 px-6 flex items-center justify-center font-sans rounded-xl">
+      <div className="max-w-7xl mx-auto w-full rounded-xl">
         
         {/* Section Heading */}
         <div className="text-center max-w-xl mx-auto mb-16 space-y-3">
@@ -27,7 +31,7 @@ const Projects = () => {
             My <span className="text-[#FF6A3D]">Services</span>
           </h2>
           <p className="text-gray-400 text-sm sm:text-base leading-relaxed">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+            Explore my latest web development projects. Built with precision and creativity, these applications highlight my hands-on experience in crafting responsive layouts, interactive user experiences, and seamless full-stack architectures. Dive into the live demos and GitHub repositories to see how I bring ideas to life.
           </p>
         </div>
 
@@ -53,9 +57,11 @@ const Projects = () => {
                 
                 {/* Floating Arrow Button */}
                 <div className="absolute bottom-0 right-0 bg-[#0b0f19] pt-3 pl-3 rounded-tl-2xl">
-                  <button className="w-11 h-11 bg-[#FF6A3D] hover:bg-[#e05b31] text-white rounded-full flex items-center justify-center shadow-lg transition-transform duration-300 group-hover:scale-110">
+                <a href={service.link}>
+                  <button className="w-11 h-11 bg-[#FF6A3D] hover:bg-[#e05b31] text-white rounded-full flex items-center justify-center shadow-lg transition-transform duration-300 group-hover:scale-110 cursor-pointer">
                     <FontAwesomeIcon icon={faArrowRight} className="transform -rotate-45" />
-                  </button>
+                  </button></a>
+
                 </div>
               </div>
             </div>
