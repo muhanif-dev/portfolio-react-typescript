@@ -4,7 +4,7 @@ import Navbar from "./components/layout/Navbar/Navbar";
 
 import Home from "./pages/Home";
 import AboutPage from "./pages/AboutPage";
-import Services from "./pages/Services";
+import SkillPage from "./pages/SkillPage";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import Projects from "./pages/Projects";
@@ -18,7 +18,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<AboutPage />} />
-          <Route path="/services" element={<Services />} />
+          <Route path="/services" element={<SkillPage />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<NotFound />} />
