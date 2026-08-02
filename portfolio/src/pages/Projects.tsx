@@ -4,18 +4,18 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 const Projects = () => {
   const services = [
     {
-      title: 'UI/UX Design',
+      title: 'Memory Game',
       image: '/images/MemoryGame.png',
       link: 'https://memory-match-game-fawn.vercel.app/'
     },
     {
-      title: 'Web Design',
+      title: 'Ring Size Calculatore',
       image: '/images/RingSizeCalculatore.png',
       link: 'https://java-script-projects-ring-size-calc.vercel.app/'
 
     },
     {
-      title: 'Web Development',
+      title: 'Full Ecommerce Website',
       image: '/images/nestivo-commerce.png',
       link:"https://dev-nestivo.pantheonsite.io/"
     }

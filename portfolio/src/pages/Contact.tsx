@@ -3,13 +3,13 @@ import { faEnvelope, faPhone, faArrowRight } from "@fortawesome/free-solid-svg-i
 
 const Contact = () => {
   return (
-    <section className="bg-[#0b0f19] min-h-screen text-white py-20 px-6 flex items-center justify-center font-sans">
-      <div className="max-w-5xl mx-auto w-full bg-[#121826] border border-gray-800/80 rounded-3xl p-8 sm:p-12 shadow-2xl grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+    <section className="bg-[#0b0f19] min-h-screen text-white py-20 px-6 flex items-center justify-center font-sans rounded-xl">
+      <div className="max-w-5xl mx-auto w-full bg-[#121826] border border-gray-800/80 rounded-3xl p-8 sm:p-12 shadow-2xl grid grid-cols-1 lg:grid-cols-12 gap-12 items-center rounded-xl">
         
         {/* Left Column: Heading & Contact Info */}
         <div className="lg:col-span-6 space-y-6">
           <p className="text-xs uppercase tracking-[3px] text-[#FF6A3D] font-semibold">
-            WE'RE HERE TO HELP YOU
+            I'M HERE TO HELP YOU
           </p>
           
           <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-white leading-tight">
@@ -29,7 +29,7 @@ const Contact = () => {
               </div>
               <div>
                 <span className="text-xs text-gray-500 block">E-mail</span>
-                <span className="text-sm font-medium text-gray-200">example@domain.com</span>
+                <span className="text-sm font-medium text-gray-200">muhanif.dev@gmail.com</span>
               </div>
             </div>
 
@@ -40,7 +40,7 @@ const Contact = () => {
               </div>
               <div>
                 <span className="text-xs text-gray-500 block">Phone number</span>
-                <span className="text-sm font-medium text-gray-200">+123 - 456 - 7890</span>
+                <span className="text-sm font-medium text-gray-200">+92 3295258847</span>
               </div>
             </div>
           </div>
@@ -55,7 +55,7 @@ const Contact = () => {
               <label className="block text-xs font-medium text-gray-400 mb-1">Name</label>
               <input 
                 type="text" 
-                placeholder="Jane Smith" 
+                placeholder="Full Name" 
                 className="w-full bg-[#121826] border border-gray-800 rounded-xl px-4 py-3 text-sm text-white placeholder-gray-600 focus:outline-none focus:border-[#FF6A3D] transition-colors"
               />
             </div>
@@ -65,13 +65,13 @@ const Contact = () => {
               <label className="block text-xs font-medium text-gray-400 mb-1">Email</label>
               <input 
                 type="email" 
-                placeholder="jane@frames.com" 
+                placeholder="Email"
                 className="w-full bg-[#121826] border border-gray-800 rounded-xl px-4 py-3 text-sm text-white placeholder-gray-600 focus:outline-none focus:border-[#FF6A3D] transition-colors"
               />
             </div>
 
             {/* Industry Field */}
-            <div>
+            {/* <div>
               <label className="block text-xs font-medium text-gray-400 mb-1">Industry</label>
               <select 
                 className="w-full bg-[#121826] border border-gray-800 rounded-xl px-4 py-3 text-sm text-gray-400 focus:outline-none focus:border-[#FF6A3D] transition-colors"
@@ -81,7 +81,7 @@ const Contact = () => {
                 <option>UI/UX Design</option>
                 <option>Digital Marketing</option>
               </select>
-            </div>
+            </div> */}
 
             {/* Message Field */}
             <div>
