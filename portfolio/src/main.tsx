@@ -1,12 +1,14 @@
-import { StrictMode } from 'react'
-//This imports the API responsible for rendering your React application into the browser.
-import { createRoot } from 'react-dom/client'
-import App from './App.tsx'
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import { BrowserRouter } from "react-router-dom";
+
+import App from "./App";
 import "./index.css";
 
-// (!). This is the non-null assertion operator in TypeScript.
-createRoot(document.getElementById('root')!).render(
+createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <App />
-  </StrictMode>,
-)
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </StrictMode>
+);
