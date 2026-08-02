@@ -1,3 +1,7 @@
+import { NavLink } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight, faDownload } from "@fortawesome/free-solid-svg-icons";
+
 
 const AboutPage = () => {
   return (
@@ -26,18 +30,20 @@ const AboutPage = () => {
         <div className="lg:col-span-6 space-y-6">
           
           {/* Section Badge */}
-          <span className="inline-block border border-gray-700 text-gray-300 text-xs font-semibold px-4 py-1.5 rounded-full tracking-wider uppercase">
+          <span className="inline-block border border-gray-700 text-gray-300 text-xs font-semibold px-4 py-1.5 rounded-full tracking-wider uppercase bg-[#FF6A3D]">
             About Me
           </span>
 
           {/* Headline */}
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight">
-            Get a website that will make a lasting impression on your audience!!!
-          </h2>
+Bachelor of Science in Computer Science          </h2>
 
           {/* Description */}
           <p className="text-gray-400 text-sm sm:text-base leading-relaxed">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+            <b>University :</b> University of Lakki Marwat <br />
+<b>Degree: </b> Bachelor of Science in Computer Science (BS Computer Science) <br />
+<b>Academic Standing:</b> Completed 4th semester (June 2026) <br />
+<b>Expected Graduation:</b> 2028 <br />
           </p>
 
           {/* Info Card Grid */}
@@ -70,14 +76,25 @@ const AboutPage = () => {
           </div>
 
           {/* CTA Buttons */}
-          <div className="flex flex-wrap items-center gap-4 pt-2">
-            <button className="bg-[#FF6A3D] hover:bg-[#e05b31] text-white font-medium px-7 py-3 rounded-xl transition shadow-lg shadow-orange-600/20 flex items-center gap-2 text-sm">
-              Contact me <i className="fa-solid fa-arrow-right"></i>
-            </button>
-            <button className="border border-[#FF6A3D] text-[#FF6A3D] hover:bg-[#FF6A3D]/10 font-medium px-6 py-3 rounded-xl transition flex items-center gap-2 text-sm">
-              Download my resume <i className="fa-solid fa-download"></i>
-            </button>
-          </div>
+ 
+<div className="flex flex-wrap items-center gap-4 pt-2">
+  {/* Contact me button acting as NavLink */}
+  <NavLink
+    to="/contact"
+    className="bg-[#FF6A3D] hover:bg-[#e05b31] text-white font-medium px-7 py-3 rounded-xl transition shadow-lg shadow-orange-600/20 flex items-center gap-2 text-sm no-underline cursor-pointer"
+  >
+    Contact me <FontAwesomeIcon icon={faArrowRight} />
+  </NavLink>
+
+  {/* Download resume button acting as an anchor link to public/document */}
+  <a
+    href="/document/your-cv-filename.pdf"
+    download="Muhammad_Hanif_CV.pdf"
+    className="border border-[#FF6A3D] text-[#FF6A3D] hover:bg-[#FF6A3D]/10 font-medium px-6 py-3 rounded-xl transition flex items-center gap-2 text-sm no-underline cursor-pointer"
+  >
+    Download my resume <FontAwesomeIcon icon={faDownload} />
+  </a>
+</div>
 
         </div>
 
