@@ -1,8 +1,14 @@
+import Navbar from "./components/layout/Navbar/Navbar"
 
 function App() {
 
   return (
-    <h1 className="text-orange-500">Portfoio hey</h1>
+    <>
+        <Navbar />
+        <main className="min-h-screen bg-slate-900"></main>
+
+    </>
+
   )
 }
 
