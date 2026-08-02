@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faArrowRight,
@@ -43,29 +44,31 @@ const HeroContent = () => {
 
         {/* Hire Me */}
 
-        <button className="group flex items-center justify-center gap-3 rounded-full bg-orange-500 px-8 py-4 text-lg font-semibold text-white transition-all duration-300 hover:-translate-y-1 hover:bg-orange-600">
 
-          Hire Me
-
-          <FontAwesomeIcon
-            icon={faArrowRight}
-            className="transition-transform duration-300 group-hover:translate-x-1"
-          />
-
-        </button>
+<NavLink
+  to="/contact"
+  className="group flex items-center justify-center gap-3 rounded-full bg-orange-500 px-8 py-4 text-lg font-semibold text-white transition-all duration-300 hover:-translate-y-1 hover:bg-orange-600 cursor-pointer no-underline"
+>
+  Hire Me
+  <FontAwesomeIcon
+    icon={faArrowRight}
+    className="transition-transform duration-300 group-hover:translate-x-1"
+  />
+</NavLink>
 
         {/* Download CV */}
 
-        <button className="group flex items-center justify-center gap-3 rounded-full border-2 border-orange-500 px-8 py-4 text-lg font-semibold text-orange-500 transition-all duration-300 hover:bg-orange-500 hover:text-white">
-
-          Download CV
-
-          <FontAwesomeIcon
-            icon={faDownload}
-            className="transition-transform duration-300 group-hover:translate-y-1"
-          />
-
-        </button>
+       <a
+  href="/document/Muhammad Hanif's CV.pdf"
+  download="Muhammad_Hanif_CV.pdf"
+  className="group flex items-center justify-center gap-3 rounded-full border-2 border-orange-500 px-8 py-4 text-lg font-semibold text-orange-500 transition-all duration-300 hover:bg-orange-500 hover:text-white cursor-pointer no-underline"
+>
+  Download CV
+  <FontAwesomeIcon
+    icon={faDownload}
+    className="transition-transform duration-300 group-hover:translate-y-1"
+  />
+</a>
 
       </div>
 

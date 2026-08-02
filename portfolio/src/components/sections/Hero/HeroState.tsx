@@ -12,7 +12,7 @@ const HeroStats = () => {
 
         {/* Experience */}
 
-        <div className="group flex items-center gap-5 rounded-2xl p-4 transition-all duration-300 hover:bg-orange-50">
+        <div className="group flex items-center gap-5 rounded-2xl p-4 transition-all duration-300 hover:bg-orange-50 cursor-pointer">
 
           <div className="flex h-16 w-16 items-center justify-center rounded-full bg-orange-100 text-2xl text-orange-500 transition-transform duration-300 group-hover:scale-110">
             <FontAwesomeIcon icon={faAward} />
@@ -20,7 +20,7 @@ const HeroStats = () => {
 
           <div>
             <h2 className="text-3xl font-bold text-slate-900">
-              2+
+              1+
             </h2>
 
             <p className="text-slate-600">
@@ -40,7 +40,7 @@ const HeroStats = () => {
 
           <div>
             <h2 className="text-3xl font-bold text-slate-900">
-              15+
+              35+
             </h2>
 
             <p className="text-slate-600">
