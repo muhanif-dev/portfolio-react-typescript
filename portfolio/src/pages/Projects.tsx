@@ -1,12 +1,13 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons"; 
+ import { Link } from "react-router-dom";
 
 const Projects = () => {
   const services = [
     {
-      title: 'Memory Game',
-      image: '/images/MemoryGame.png',
-      link: 'https://memory-match-game-fawn.vercel.app/'
+      title: "To Do List",
+      image: "/images/ToDoList.png",
+      link: "https://to-do-list-app-seven-weld.vercel.app/"
     },
     {
       title: 'Ring Size Calculatore',
@@ -69,11 +70,16 @@ const Projects = () => {
         </div>
 
         {/* See All Button */}
-        <div className="flex justify-center">
-          <button className="bg-[#FF6A3D] hover:bg-[#e05b31] text-white font-semibold px-8 py-3.5 rounded-full shadow-lg shadow-orange-600/20 transition-all duration-300 hover:-translate-y-0.5 flex items-center gap-2 text-sm">
-            See All <FontAwesomeIcon icon={faArrowRight} />
-          </button>
-        </div>
+       
+
+<div className="flex justify-center">
+  <Link 
+    to="/all-projects" 
+    className="bg-[#FF6A3D] hover:bg-[#e05b31] text-white font-semibold px-8 py-3.5 rounded-full shadow-lg shadow-orange-600/20 transition-all duration-300 hover:-translate-y-0.5 flex items-center gap-2 text-sm no-underline cursor-pointer"
+  >
+    See All <FontAwesomeIcon icon={faArrowRight} />
+  </Link>
+</div>
 
       </div>
     </section>
