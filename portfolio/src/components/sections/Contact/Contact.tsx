@@ -1,9 +1,10 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faPhone, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
+
 const Contact = () => {
-  return (
-    <section className="bg-[#0b0f19] min-h-screen text-white py-20 px-6 flex items-center justify-center font-sans rounded-xl">
+    return (
+        <section className="bg-[#0b0f19] min-h-screen text-white py-20 px-6 flex items-center justify-center font-sans rounded-xl">
       <div className="max-w-5xl mx-auto w-full bg-[#121826] border border-gray-800/80 rounded-3xl p-8 sm:p-12 shadow-2xl grid grid-cols-1 lg:grid-cols-12 gap-12 items-center rounded-xl">
         
         {/* Left Column: Heading & Contact Info */}
@@ -108,7 +109,7 @@ const Contact = () => {
 
       </div>
     </section>
-  );
-};
+    )
+}
 
 export default Contact;
