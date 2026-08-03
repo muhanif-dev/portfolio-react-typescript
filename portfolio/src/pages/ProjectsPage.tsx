@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons"; 
  import { Link } from "react-router-dom";
 
-const Projects = () => {
+const ProjectsPage = () => {
   const services = [
     {
       title: "To Do List",
@@ -86,4 +86,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default ProjectsPage;
