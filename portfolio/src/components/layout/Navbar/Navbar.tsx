@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
+import HireMe from "../../ui/Button/HireMe";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -58,12 +59,7 @@ const Navbar = () => {
         </ul>
 
         {/* Hire Me Button */}
-        <NavLink
-          to="/contact"
-          className="hidden rounded-lg bg-orange-500 px-5 py-2 font-medium text-white transition-all duration-300 hover:bg-orange-600 md:block"
-        >
-          Hire Me
-        </NavLink>
+        <HireMe />
 
         {/* Mobile Menu Button */}
         <button

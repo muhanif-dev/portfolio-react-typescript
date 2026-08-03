@@ -1,6 +1,5 @@
-import { NavLink } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight, faDownload } from "@fortawesome/free-solid-svg-icons";
+import HireMe from "../../ui/Button/HireMe";
+import DownloadCv from "../../ui/Button/DownloadCv";
 
 
 const About = () => {
@@ -79,21 +78,10 @@ Bachelor of Science in Computer Science          </h2>
  
 <div className="flex flex-wrap items-center gap-4 pt-2">
   {/* Contact me button acting as NavLink */}
-  <NavLink
-    to="/contact"
-    className="bg-[#FF6A3D] hover:bg-[#e05b31] text-white font-medium px-7 py-3 rounded-xl transition shadow-lg shadow-orange-600/20 flex items-center gap-2 text-sm no-underline cursor-pointer"
-  >
-    Contact me <FontAwesomeIcon icon={faArrowRight} />
-  </NavLink>
+  <HireMe />
 
   {/* Download resume button acting as an anchor link to public/document */}
-  <a
-    href="/document/your-cv-filename.pdf"
-    download="Muhammad_Hanif_CV.pdf"
-    className="border border-[#FF6A3D] text-[#FF6A3D] hover:bg-[#FF6A3D]/10 font-medium px-6 py-3 rounded-xl transition flex items-center gap-2 text-sm no-underline cursor-pointer"
-  >
-    Download my resume <FontAwesomeIcon icon={faDownload} />
-  </a>
+  <DownloadCv />
 </div>
 
         </div>
