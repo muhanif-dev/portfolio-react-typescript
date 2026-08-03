@@ -4,7 +4,7 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 const HireMe = () => {
     return (
-        <NavLink
+<NavLink
   to="/contact"
   className="group flex items-center justify-center gap-3 rounded-full bg-orange-500 px-8 py-4 text-lg font-semibold text-white transition-all duration-300 hover:-translate-y-1 hover:bg-orange-600 cursor-pointer no-underline"
 >

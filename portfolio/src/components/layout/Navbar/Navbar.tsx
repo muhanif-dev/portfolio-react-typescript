@@ -41,7 +41,7 @@ const Navbar = () => {
 
           <li>
             <NavLink to="/services" className={navLinkClass}>
-              Services
+              Skills
             </NavLink>
           </li>
 
@@ -56,10 +56,8 @@ const Navbar = () => {
               Contact
             </NavLink>
           </li>
+          <HireMe />
         </ul>
-
-        {/* Hire Me Button */}
-        <HireMe />
 
         {/* Mobile Menu Button */}
         <button
@@ -101,7 +99,7 @@ const Navbar = () => {
                 className={navLinkClass}
                 onClick={closeMenu}
               >
-                Services
+                Skills
               </NavLink>
             </li>
 
@@ -126,13 +124,7 @@ const Navbar = () => {
             </li>
 
             <li>
-              <NavLink
-                to="/contact"
-                onClick={closeMenu}
-                className="rounded-lg bg-orange-500 px-5 py-2 text-center font-medium text-white transition-all duration-300 hover:bg-orange-600"
-              >
-                Hire Me
-              </NavLink>
+              <HireMe />
             </li>
           </ul>
         </div>
