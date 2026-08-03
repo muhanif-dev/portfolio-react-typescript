@@ -6,12 +6,12 @@ const Contact = () => {
   const [result, setResult] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const onSubmit = async (event) => {
+  const onSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     setIsSubmitting(true);
     setResult("Sending...");
 
-    const formData = new FormData(event.target);
+    const formData = new FormData(event.currentTarget);
 
     // Enter your Web3Forms Access Key here
     formData.append("access_key", "47222c88-afe2-4a35-8501-e2b9f287fd44");
@@ -26,7 +26,7 @@ const Contact = () => {
 
       if (data.success) {
         setResult("Form Submitted Successfully!");
-        event.target.reset();
+        event.currentTarget.reset();
       } else {
         console.log("Error", data);
         setResult(data.message);
